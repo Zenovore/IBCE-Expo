@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view />
+  <div class="flex bg-black text-white text-[10rem]">apel</div>
+  <!-- <router-view /> -->
 </template>
 
 <style>
