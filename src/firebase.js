@@ -1,5 +1,6 @@
-import firebase from "firebase";
-import { ref, onMounted } from "vue";
+import firebase from "firebase/compat/app";
+// import { firebaseConfig } from "./firebase-config";
+import "firebase/compat/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyANlUt3O0DvPqHu-IXwkXuh5BF0vmHvCFY",
@@ -13,7 +14,7 @@ const firebaseConfig = {
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const db = firebaseApp.firestore();
+export const db = firebaseApp.firestore();
 const guestbookCollection = db.collection("guest-book");
 
 export const createGuest = (guest) => {
