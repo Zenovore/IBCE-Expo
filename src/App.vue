@@ -1,8 +1,8 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
   <!-- <div class="flex bg-black text-white text-[10rem]">apel</div> -->
   <router-view />
 </template>
