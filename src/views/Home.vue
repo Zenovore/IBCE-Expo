@@ -117,7 +117,7 @@ export default {
         this.guestData.pekerjaan = "";
         this.$router.push("/about");
       } catch (e) {
-        console.log("error");
+        // console.log("error");
       }
     },
   },
