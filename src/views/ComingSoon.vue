@@ -22,7 +22,7 @@
     >
       <kinesis-element :strength="10">
         <img
-          class="w-96 pointer-events-none"
+          class="w-56 lg:w-96 pointer-events-none"
           src="../assets/comingsoon.svg"
           alt=""
         />
