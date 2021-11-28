@@ -7,6 +7,12 @@
   <router-view />
 </template>
 
+<script>
+export default {
+  name: "app",
+};
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

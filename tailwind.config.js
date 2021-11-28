@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         leafBackground: "url(assets/background.jpg)",
+        comingSoon: "url(assets/comingsoon.svg)",
       },
       colors: {
         red_10: "#EEDDDD",
