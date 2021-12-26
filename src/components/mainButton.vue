@@ -23,9 +23,20 @@
         bottom-[6px]
         border-2
         border-green_105
+        hover:bottom-[4px]
       "
     >
-      <span class="absolute inset-0 z-50 my-auto h-[fit-content]">VISIT</span>
+      <span
+        class="
+          absolute
+          inset-0
+          z-50
+          my-auto
+          h-[fit-content]
+          font-roboto font-bold
+        "
+        >VISIT</span
+      >
     </div>
   </div>
 </template>

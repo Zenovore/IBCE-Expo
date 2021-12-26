@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
   purge: ["./public/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -7,6 +8,8 @@ module.exports = {
       backgroundImage: {
         leafBackground: "url(assets/background.jpg)",
         comingSoon: "url(assets/comingsoon.svg)",
+        navbarBG: "url(assets/navbar/background.png)",
+        navbarBGphone: "url(assets/navbar/backgroundphone.png)",
       },
       colors: {
         red_10: "#EEDDDD",
@@ -31,6 +34,11 @@ module.exports = {
         orange_100: "#EB9F4B",
         gray: "#8C8C8C",
         whiteish: "#FCFAEB",
+      },
+      fontFamily: {
+        sans: ["Roboto", "Roboto-500", ...defaultTheme.fontFamily.sans],
+        lobster: ["Lobster", "cursive"],
+        roboto: ["Roboto Condensed", "sans-serif"],
       },
     },
   },

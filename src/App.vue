@@ -4,12 +4,15 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <!-- <div class="flex bg-black text-white text-[10rem]">apel</div> -->
+  <Navbar />
   <router-view />
 </template>
 
 <script>
+import Navbar from "./components/header.vue";
 export default {
   name: "app",
+  components: { Navbar },
 };
 </script>
 

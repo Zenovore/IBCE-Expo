@@ -1,11 +1,20 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import ComingSoon from "../views/ComingSoon.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import Comingsoon from "../views/Comingsoon.vue";
+import Guestbook from "../views/Guestbook.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/comingsoon",
     name: "comingsoon",
-    component: ComingSoon,
+    component: Comingsoon,
+    meta: {
+      title: "IBCE 2022 - Coming Soon",
+    },
+  },
+  {
+    path: "/Guestbook",
+    name: "guestbook",
+    component: Guestbook,
     meta: {
       title: "IBCE 2022 - Coming Soon",
     },
@@ -17,12 +26,13 @@ const routes = [
   //   // this generates a separate chunk (about.[hash].js) for this route
   //   // which is lazy-loaded when the route is visited.
   //   component: () =>
-  //     import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  //     // import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  //     import("../views/Guestbook.vue"),
   // },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 
