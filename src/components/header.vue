@@ -66,7 +66,7 @@
         >
           <li>
             <a
-              href="#"
+              href="/catalogue"
               class="
                 block
                 py-2
@@ -82,7 +82,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/game"
               class="
                 block
                 py-2
@@ -97,7 +97,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/mainevent"
               class="
                 block
                 py-2
@@ -122,7 +122,7 @@
         >
           <li>
             <a
-              href="#"
+              href="/catalogue"
               class="
                 block
                 py-2
@@ -142,7 +142,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/game"
               class="
                 block
                 py-2
@@ -161,7 +161,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/mainevent"
               class="
                 block
                 py-2
