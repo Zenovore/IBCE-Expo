@@ -61,6 +61,9 @@ module.exports = {
         lobster: ["Lobster", "cursive"],
         roboto: ["Roboto Condensed", "sans-serif"],
       },
+      zIndex: {
+        "-10": "-10",
+      },
     },
   },
   variants: {

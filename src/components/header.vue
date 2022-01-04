@@ -75,6 +75,7 @@
                 text-white
                 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
               "
+              style="text-decoration-color: #f0c55a"
               aria-current="page"
               >CATALOGUE</a
             >
@@ -90,6 +91,7 @@
                 text-white
                 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
               "
+              style="text-decoration-color: #f0c55a"
               >GAME</a
             >
           </li>
@@ -104,6 +106,7 @@
                 text-white
                 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
               "
+              style="text-decoration-color: #f0c55a"
               >MAIN EVENT</a
             >
           </li>
@@ -133,6 +136,7 @@
                 md:p-0
               "
               aria-current="page"
+              style="text-decoration-color: #f0c55a"
               >CATALOGUE</a
             >
           </li>
@@ -151,6 +155,7 @@
                 md:hover:underline
                 md:p-0
               "
+              style="text-decoration-color: #f0c55a"
               >GAME</a
             >
           </li>
@@ -169,6 +174,7 @@
                 md:hover:underline
                 md:p-0
               "
+              style="text-decoration-color: #f0c55a"
               >MAIN EVENT</a
             >
           </li>
