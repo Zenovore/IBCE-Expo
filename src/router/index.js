@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Comingsoon from "../views/Comingsoon.vue";
 import Guestbook from "../views/Guestbook.vue";
+import Mainevent from "../views/Mainevent.vue";
 
 const routes = [
   {
@@ -17,6 +18,14 @@ const routes = [
     component: Guestbook,
     meta: {
       title: "IBCE 2022 - Coming Soon",
+    },
+  },
+  {
+    path: "/Mainevent",
+    name: "mainevent",
+    component: Mainevent,
+    meta: {
+      title: "IBCE 2022 - Main Event",
     },
   },
   // {

@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <!-- <div class="flex bg-black text-white text-[10rem]">apel</div> -->
-  <Navbar />
+  <Navbar v-if="1 == 1" class="fixed w-screen z-[100]" />
   <router-view />
 </template>
 
