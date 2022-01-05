@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Comingsoon from "../views/ComingSoon.vue";
-import Guestbook from "../views/GuestBook.vue";
+import Comingsoon from "../views/Comingsoon.vue";
+import Guestbook from "../views/Guestbook.vue";
+import Mainevent from "../views/Mainevent.vue";
 import Catalogue from "../views/Catalogue.vue";
 
 const routes = [
@@ -26,6 +27,14 @@ const routes = [
     component: Catalogue,
     meta: {
       title: "IBCE 2022 – Catalogue",
+    },
+  },
+  {
+    path: "/Mainevent",
+    name: "mainevent",
+    component: Mainevent,
+    meta: {
+      title: "IBCE 2022 - Main Event",
     },
   },
   // {

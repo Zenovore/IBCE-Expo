@@ -33,7 +33,7 @@
         <span class="sr-only">Open main menu</span>
         <svg
           class="w-6 h-6"
-          fill="currentColor"
+          fill="white"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -45,7 +45,7 @@
         </svg>
         <svg
           class="hidden w-6 h-6"
-          fill="currentColor"
+          fill="white"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -128,8 +128,12 @@
                 py-2
                 pr-4
                 pl-3
-                text-white
-                md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
+                text-white text-left
+                md:text-center
+                md:hover:bg-transparent
+                md:border-0
+                md:hover:underline
+                md:p-0
               "
               aria-current="page"
               style="text-decoration-color: #f0c55a"
@@ -144,8 +148,12 @@
                 py-2
                 pr-4
                 pl-3
-                text-white
-                md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
+                text-white text-left
+                md:text-center
+                md:hover:bg-transparent
+                md:border-0
+                md:hover:underline
+                md:p-0
               "
               style="text-decoration-color: #f0c55a"
               >GAME</a
@@ -159,8 +167,12 @@
                 py-2
                 pr-4
                 pl-3
-                text-white
-                md:hover:bg-transparent md:border-0 md:hover:underline md:p-0
+                text-white text-left
+                md:text-center
+                md:hover:bg-transparent
+                md:border-0
+                md:hover:underline
+                md:p-0
               "
               style="text-decoration-color: #f0c55a"
               >MAIN EVENT</a

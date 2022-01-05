@@ -3,7 +3,6 @@
     class="
       flex
       h-[100vh]
-      w-[100vw]
       bg-leafBackground bg-cover
       justify-center
       items-center
