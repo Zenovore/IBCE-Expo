@@ -10,8 +10,19 @@
       src="../assets/bgflower/bg2_bottomright.png"
       alt=""
     />
+    <card
+      title="test"
+      src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
+      class=""
+    ></card>
   </div>
 </template>
 
-<script></script>
+<script>
+import card from "../components/card.vue";
+export default {
+  components: { card },
+};
+</script>
+
 <style></style>
