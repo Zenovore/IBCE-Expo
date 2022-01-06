@@ -3,9 +3,10 @@
     class="
       py-3
       px-5
-      bg-navbarBGphone bg-cover bg-top
+      bg-footerPhone bg-cover bg-top
       font-roboto
-      md:bg-navbarBG md:bg-center md:py-6 md:bg-cover
+      md:bg-footerTablet md:bg-center md:py-6 md:bg-cover
+      lg:bg-footerDesktop
     "
   >
     <div class="container flex flex-wrap items-center mx-auto">

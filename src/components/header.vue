@@ -3,9 +3,10 @@
     class="
       py-2.5
       px-4
-      bg-navbarBGphone bg-top bg-cover
       font-roboto
-      md:bg-navbarBG md:bg-center md:bg-cover md:py-4
+      bg-headerPhone bg-top bg-cover
+      md:bg-headerTablet md:bg-center md:bg-cover md:py-4
+      xl:bg-headerDesktop
     "
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
