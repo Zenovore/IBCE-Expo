@@ -58,14 +58,20 @@
         :fileData="catalogueData['2021-2022']"
       ></accordion>
     </div>
+    <card
+      title="test"
+      src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
+      class=""
+    ></card>
   </div>
 </template>
 
 <script>
 import accordion from "../components/Accordion.vue";
+import card from "../components/card.vue";
 
 export default {
-  components: { accordion },
+  components: { accordion, card },
   data() {
     return {
       catalogueData: {
