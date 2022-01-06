@@ -5,41 +5,25 @@
       relative
       rounded-xl
       p-5
-      w-80
-      md:rounded-2xl md:p-7 md:w-96
-      xl:rounded-3xl xl:p-8 xl:w-[32rem]
+      w-60
+      md:rounded-2xl md:p-7 md:w-80
     "
   >
-    <div
-      class="
-        w-[17.5rem]
-        h-[17.5rem]
-        md:w-[20.5rem] md:h-[20.5rem]
-        xl:w-[28rem] xl:h-[28rem]
-      "
-    >
+    <div class="w-[12.5rem] h-[12.5rem] md:w-[16.5rem] md:h-[16.5rem]">
       <img
         :src="this.src"
         :alt="this.alt"
         class="
           object-cover
           rounded-lg
-          w-[17.5rem]
-          h-[17.5rem]
-          md:rounded-xl md:w-[20.5rem] md:h-[20.5rem]
-          xl:rounded-2xl xl:w-[28rem] xl:h-[28rem]
+          w-[12.5rem]
+          h-[12.5rem]
+          md:rounded-xl md:w-[16.5rem] md:h-[16.5rem]
         "
       />
     </div>
     <p
-      class="
-        text-white
-        font-lobster
-        pt-3
-        text-2xl
-        md:text-3xl md:pt-[1.05rem]
-        xl:pt-[1.2rem]
-      "
+      class="text-white font-lobster pt-3 text-2xl md:text-3xl md:pt-[1.05rem]"
     >
       {{ this.title }}
     </p>

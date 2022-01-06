@@ -26,7 +26,12 @@
       src="../assets/bgflower/bg2_bottomright.png"
       alt=""
     />
-    <div class="flex flex-col justify-center items-center py-20 gap-4 relative">
+    <div class="flex flex-col justify-center items-center py-24 gap-4 relative">
+      <card
+        title="test"
+        src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
+      ></card>
+      <div class=""></div>
       <accordion
         :title="'2017-2018'"
         :background="'bunga1'"
@@ -58,11 +63,6 @@
         :fileData="catalogueData['2021-2022']"
       ></accordion>
     </div>
-    <card
-      title="test"
-      src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
-      class=""
-    ></card>
   </div>
 </template>
 
