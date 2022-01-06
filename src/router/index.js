@@ -3,6 +3,7 @@ import Comingsoon from "../views/Comingsoon.vue";
 import Guestbook from "../views/Guestbook.vue";
 import Mainevent from "../views/Mainevent.vue";
 import Catalogue from "../views/Catalogue.vue";
+import Game from "../views/Game.vue";
 
 const routes = [
   {
@@ -22,7 +23,7 @@ const routes = [
     },
   },
   {
-    path: "/catalogue",
+    path: "/",
     name: "catalogue",
     component: Catalogue,
     meta: {
@@ -30,23 +31,58 @@ const routes = [
     },
   },
   {
-    path: "/Mainevent",
+    path: "/mainevent",
     name: "mainevent",
     component: Mainevent,
     meta: {
       title: "IBCE 2022 - Main Event",
     },
   },
+  {
+    path: "/game",
+    name: "game",
+    component: Game,
+    meta: {
+      title: "IBCE 2022 - Game",
+    },
+  },
+
   // {
-  //   path: "/about",
-  //   name: "About",
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () =>
-  //     // import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  //     import("../views/Guestbook.vue"),
+  //   path: "/sponsor/:name",
+  //   name: "sponsor",
+  //   component: Sponsor,
+  //   meta: {
+  //     title: "IBCE 2022 - Sponsor",
+  //   },
   // },
+  {
+    path: "/sponsor/:name",
+    name: "sponsor",
+    meta: {
+      title: "IBCE 2022 - Sponsor",
+    },
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      // import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import("../views/Sponsor.vue"),
+    props: true,
+  },
+  {
+    path: "/article/:year/:id",
+    name: "article",
+    meta: {
+      title: "IBCE 2022 - Article",
+    },
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      // import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import("../views/Article.vue"),
+    props: true,
+  },
 ];
 
 const router = createRouter({

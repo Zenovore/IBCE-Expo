@@ -19,15 +19,11 @@
       >bit.ly/KesanPesanExpoIBCE2022</a
     >
     <!-- </h1> -->
-    <Accordion :content="'halow'" :title="'2018-2019'"></Accordion>
   </div>
 </template>
 
 <script>
-import Accordion from "../components/Accordion.vue";
-export default {
-  components: { Accordion },
-};
+export default {};
 </script>
 
 <style></style>

@@ -10,7 +10,7 @@
       rounded-lg bg-no-repeat bg-right-top 
       ${
         open
-          ? 'bg-30% bg-' + background2 + ' bg-green_65'
+          ? 'bg-40% bg-' + background2 + ' bg-green_65'
           : 'bg-20% bg-' + background + ' bg-green_60'
       }
     `"
@@ -19,17 +19,18 @@
   >
     <div class="flex flex-row">
       <div
-        :class="`flex color-bar  w-2 rounded-l-lg h-auto ${
+        :class="`flex color-bar w-2 rounded-l-lg h-auto ${
           open ? 'bg-green_80' : 'bg-green_70'
         }`"
       ></div>
-      <div class="w-full flex flex-col">
+      <div class="w-[98%] flex flex-col">
         <div
           class="
             flex flex-row
             title
             px-5
-            py-2
+            py-1
+            md:py-2
             my-auto
             rounded-lg
             align-middle
@@ -41,8 +42,8 @@
           <h1
             class="
               text-green_110
-              text-base
-              sm:text-lg
+              text-xl
+              sm:text-2xl
               md:text-4xl
               first:justify-center
               font-lobster
@@ -55,11 +56,19 @@
         </div>
         <div
           ref="accordion"
-          class="mx-0.5 flex content position-absolute rounded-b-[0.4rem] py-1"
+          class="
+            mx-0.5
+            flex
+            content
+            position-absolute
+            rounded-b-[0.4rem]
+            py-1
+            w-[inherit]
+          "
         >
-          <div class="flex-col text-left">
+          <div class="flex-col text-left w-[inherit]">
             <p
-              v-for="item in [1, 2, 3, 4]"
+              v-for="item in fileData"
               :key="item"
               ref="content"
               class="
@@ -68,13 +77,23 @@
                 md:text-xl
                 text-sm
                 md:px-4
-                py-[2px]
+                py-[8px]
                 px-2
                 font-roboto
                 underline
+                lowercase
+                first-line:capitalize
+                whitespace-nowrap
+                overflow-ellipsis overflow-hidden
+                w-[97%]
               "
             >
-              <a href="https://www.google.com" target="_blank">{{ content }}</a>
+              <a
+                class="overflow-ellipsis overflow-hidden"
+                :href="`/article/${title}/${item.id}`"
+                target="_blank"
+                >{{ item.judul }}</a
+              >
             </p>
           </div>
         </div>
@@ -103,6 +122,7 @@ export default {
       default: "bunga2",
       type: String,
     },
+    fileData: Object,
   },
   data() {
     return {
@@ -120,6 +140,9 @@ export default {
         }px`;
       }
       this.open = !this.open;
+    },
+    spliceText(text, maxChar) {
+      return text.slice(0, maxChar) + (text.length > maxChar ? "..." : "");
     },
   },
 };
