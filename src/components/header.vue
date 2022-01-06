@@ -2,18 +2,16 @@
   <nav
     class="
       py-2.5
-      bg-navbarBGphone
-      md:bg-navbarBG
-      bg-top
-      md:bg-center
       px-4
-      bg-cover
-      md:bg-cover
+      bg-navbarBGphone bg-top bg-cover
       font-roboto
+      md:bg-navbarBG md:bg-center md:bg-cover md:py-4
     "
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex"> </a>
+      <a href="#" class="flex">
+        <img src="../assets/c_icon_128.png" alt="" class="w-10" />
+      </a>
       <button
         type="button"
         class="
