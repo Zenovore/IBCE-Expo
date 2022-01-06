@@ -23,7 +23,7 @@ const routes = [
     },
   },
   {
-    path: "/catalogue",
+    path: "/",
     name: "catalogue",
     component: Catalogue,
     meta: {
@@ -46,6 +46,7 @@ const routes = [
       title: "IBCE 2022 - Game",
     },
   },
+
   // {
   //   path: "/sponsor/:name",
   //   name: "sponsor",
@@ -66,6 +67,20 @@ const routes = [
     component: () =>
       // import(/* webpackChunkName: "about" */ "../views/About.vue"),
       import("../views/Sponsor.vue"),
+    props: true,
+  },
+  {
+    path: "/article/:year/:id",
+    name: "article",
+    meta: {
+      title: "IBCE 2022 - Article",
+    },
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      // import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import("../views/Article.vue"),
     props: true,
   },
 ];

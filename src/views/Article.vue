@@ -1,73 +1,43 @@
 <template>
-  <div class="relative bg-whiteish min-h-screen w-full">
-    <img
-      class="
-        absolute
-        bottom-0
-        left-0
-        w-4/5
-        md:w-1/2
-        lg:w-2/5
-        pointer-events-none
-      "
-      src="../assets/bgflower/bg2_bottomleft.png"
-      alt=""
-    />
-    <img
-      class="
-        absolute
-        bottom-0
-        right-0
-        hidden
-        md:block md:w-1/2
-        lg:w-2/5
-        pointer-events-none
-      "
-      src="../assets/bgflower/bg2_bottomright.png"
-      alt=""
-    />
-    <div class="flex flex-col justify-center items-center py-20 gap-4 relative">
-      <accordion
-        :title="'2017-2018'"
-        :background="'bunga1'"
-        :background2="'bunga2'"
-        :fileData="catalogueData['2017-2018']"
-      ></accordion>
-      <accordion
-        :title="'2018-2019'"
-        :background="'bunga3'"
-        :background2="'bunga4'"
-        :fileData="catalogueData['2018-2019']"
-      ></accordion>
-      <accordion
-        :title="'2019-2020'"
-        :background="'bunga3'"
-        :background2="'bunga4'"
-        :fileData="catalogueData['2019-2020']"
-      ></accordion>
-      <accordion
-        :title="'2020-2021'"
-        :background="'bunga3'"
-        :background2="'bunga4'"
-        :fileData="catalogueData['2020-2021']"
-      ></accordion>
-      <accordion
-        :title="'2021-2022'"
-        :background="'bunga3'"
-        :background2="'bunga4'"
-        :fileData="catalogueData['2021-2022']"
-      ></accordion>
+  <div class="relative bg-whiteish min-h-screen w-full pt-20 py-10">
+    <div class="flex flex-row rounded-lg bg-green_65 w-4/5 mx-auto">
+      <div class="w-2 h-auto rounded-l-lg bg-green_110"></div>
+      <h1
+        class="
+          font-lobster
+          text-3xl
+          px-5
+          py-4
+          lowercase
+          text-left
+          first-line:capitalize
+        "
+      >
+        {{ judul }}
+      </h1>
     </div>
+    <iframe
+      v-if="type === 'pdf'"
+      name="fileViewer"
+      :src="link"
+      :class="`my-5 mx-auto w-4/5 h-[85vh] text-center`"
+    ></iframe>
+    <img v-else class="w-4/5 mx-auto my-5" :src="link" alt="" />
   </div>
 </template>
 
 <script>
-import accordion from "../components/Accordion.vue";
-
 export default {
-  components: { accordion },
+  components: {},
+  props: {
+    year: String,
+    id: Number,
+  },
   data() {
     return {
+      judul: String,
+      link: String,
+      type: String,
       catalogueData: {
         "2017-2018": {
           0: {
@@ -423,6 +393,53 @@ export default {
         },
       },
     };
+  },
+  created() {
+    if (!this.catalogueData[this.year]) {
+      this.$router.push("/404");
+    }
+    if (!this.catalogueData[this.year][this.id]) {
+      this.$router.push("/404");
+    }
+    this.judul = this.catalogueData[this.year][this.id].judul;
+    this.link = this.catalogueData[this.year][this.id].link;
+    this.type = this.catalogueData[this.year][this.id].type;
+  },
+  methods: {
+    testFunction(item) {
+      item.forEach(this.test2Function);
+    },
+    test2Function(item) {
+      // item.judul = item.judul.toLowerCase()
+      console.log(item.judul.toLowerCase());
+    },
+    saveFile() {
+      const data = JSON.stringify(this.catalogueData);
+      const blob = new Blob([data], { type: "text/plain" });
+      const e = document.createEvent("MouseEvents"),
+        a = document.createElement("a");
+      a.download = "test.json";
+      a.href = window.URL.createObjectURL(blob);
+      a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
+      e.initEvent(
+        "click",
+        true,
+        false,
+        window,
+        0,
+        0,
+        0,
+        0,
+        0,
+        false,
+        false,
+        false,
+        false,
+        0,
+        null
+      );
+      a.dispatchEvent(e);
+    },
   },
 };
 </script>

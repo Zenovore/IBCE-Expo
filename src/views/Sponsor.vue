@@ -9,7 +9,7 @@
       <img
         v-if="name == 'blu'"
         class="w-72 sm:w-96 self-center"
-        src="../assets/sponsor/blu.png"
+        src="../assets/sponsor/blu2.png"
         alt="test"
       />
       <h1 class="text-4xl font-lobster mt-6 mb-6">
