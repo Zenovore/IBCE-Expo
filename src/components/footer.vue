@@ -267,7 +267,7 @@
           <li>
             <a href="#" class="block text-left">
               <img
-                src="../assets/logo.png"
+                src="../assets/sponsor/blu2.png"
                 class="h-16 pl-3 md:h-20 md:pl-0"
                 alt=""
               />
@@ -276,7 +276,7 @@
           <li>
             <a href="#" class="block text-left">
               <img
-                src="../assets/logo.png"
+                src="../assets/sponsor/paragon.png"
                 class="h-16 pl-3 md:h-20 md:pl-0"
                 alt=""
               />
