@@ -27,10 +27,16 @@
       alt=""
     />
     <div class="flex flex-col justify-center items-center py-24 gap-4 relative">
-      <card
-        title="test"
-        src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
-      ></card>
+      <div class="flex flex-row gap-16">
+        <card
+          title="blu by Digital BCA"
+          src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
+        ></card>
+        <card
+          title="Paragon"
+          src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
+        ></card>
+      </div>
       <div class=""></div>
       <accordion
         :title="'2017-2018'"

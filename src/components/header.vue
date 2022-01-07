@@ -1,5 +1,6 @@
 <template>
   <nav
+    v-if="showData"
     class="
       py-2.5
       px-4
@@ -189,6 +190,11 @@ export default {
     return {
       showMenu: false,
     };
+  },
+  computed: {
+    showData: function () {
+      return this.$route.path !== "/";
+    },
   },
 };
 </script>

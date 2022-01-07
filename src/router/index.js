@@ -15,15 +15,15 @@ const routes = [
     },
   },
   {
-    path: "/guestbook",
+    path: "/",
     name: "guestbook",
     component: Guestbook,
     meta: {
-      title: "IBCE 2022 – Coming Soon",
+      title: "IBCE 2022 – Guestbook",
     },
   },
   {
-    path: "/",
+    path: "/catalogue",
     name: "catalogue",
     component: Catalogue,
     meta: {
