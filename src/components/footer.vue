@@ -1,5 +1,6 @@
 <template>
   <footer
+    v-if="showData"
     class="
       py-3
       px-5
@@ -287,7 +288,15 @@
   </footer>
 </template>
 
-<script></script>
+<script>
+export default {
+  computed: {
+    showData: function () {
+      return this.$route.path !== "/";
+    },
+  },
+};
+</script>
 
 <style scoped>
 .socmed {

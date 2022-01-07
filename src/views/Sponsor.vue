@@ -43,9 +43,9 @@ export default {
     return {
       sponsorData: {
         blu: {
-          nama: "Blu by Digital BCA",
+          nama: "blu by BCA Digital",
           content:
-            "Hi! Aku blu, aplikasi mobile banking dari BCA Digital, salah satu perusahaan anak dari BCA Group. Senang bisa berkenalan dengan kamu!\n blu hadir dengan tujuan memudahkan kamu dengan segala fiturnya. Yuk, cobain beragam fitur dari blu! \n Ngatur banyak tabungan dalam satu rekening? Bisa pake bluSaving. Patungan online buat liburan ramean? Pake bluGether pasti bisa jalan. Pengen buka Deposito tapi cuma punya 1juta? bluDeposit aja. Transaksi ini itu, semua bisa dalam genggaman kamu! \n\n Pengen kenal lebih dekat sama blu? Cuss, download aplikasi blu by BCA Digital di Play Store atau App Store sekarang juga! #MulaiLangkahmu bareng blu! #YangPentingLakuin",
+            "Hi! Ini blu, aplikasi mobile banking dari BCA Digital, salah satu perusahaan anak dari BCA Group. blu senang bisa berkenalan dengan kamu!\n blu hadir dengan tujuan memudahkan kamu dengan segala fiturnya. Yuk, cobain beragam fitur dari blu! \n Ngatur banyak tabungan dalam satu rekening? Bisa pake bluSaving. Patungan online buat liburan ramean? Pake bluGether pasti bisa jalan. \n Pengen buka Deposito tapi cuma punya 1juta? bluDeposit aja. Transaksi ini itu, semua bisa dalam genggaman kamu! \n\n Pengen kenal lebih dekat sama blu? Cuss, download aplikasi blu by BCA Digital di Play Store atau App Store sekarang juga! #MulaiLangkahmu bareng blu! #YangPentingLakuin",
         },
       },
       selectedSponsor: "",

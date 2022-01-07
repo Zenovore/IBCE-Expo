@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <!-- <div class="flex bg-black text-white text-[10rem]">apel</div> -->
-  <Navbar v-if="1 == 1" class="fixed w-screen z-[100]" />
+  <Navbar class="fixed w-screen z-[100]" />
   <router-view />
   <Footer />
 </template>
@@ -15,6 +15,15 @@ import Footer from "./components/footer.vue";
 export default {
   name: "app",
   components: { Navbar, Footer },
+  created() {
+    // console.log(this.$route);
+    // console.log(this.$route.path);
+    // showData() {
+    // console.log(this.$router.currentRoute._value.fullPath);
+    // let cek = this.$router.currentRoute._value.fullPath;
+    // return cek !== "/";
+    // },
+  },
 };
 </script>
 

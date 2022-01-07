@@ -1,24 +1,29 @@
 <template>
-  <div class="h-[100vh] bg-leafBackground bg-cover">
-    <div class="mx-auto w-4/5 2xl:max-w-[1080px] pt-[10%]">
+  <div class="min-h-[100vh] bg-leafBackground bg-cover">
+    <div
+      class="mx-auto h-[inherit] w-full md:w-4/5 2xl:max-w-[1080px] py-[10%]"
+    >
       <div
         class="
           bg-[rgb(252,250,235,0.7)]
           w-4/5
           h-3/5
           mx-auto
-          flex flex-row
+          flex flex-col
+          xl:flex-row
           backdrop-filter backdrop-blur-lg
           rounded-3xl
-          px-12
-          py-10
+          px-4
+          md:px-12
+          py-4
+          md:py-8
         "
       >
-        <div class="flex">
-          <img src="@/assets/logo.png" class="w-auto h-72 my-auto" alt="" />
+        <div class="flex justify-center">
+          <img src="@/assets/logo.png" class="w-96 h-auto my-auto" alt="" />
         </div>
         <div class="flex flex-grow">
-          <div class="flex flex-col w-[100%] mx-auto px-4 py-8">
+          <div class="flex flex-col w-[100%] mx-auto px-2 py-4 md:px-4 md:py-8">
             <textbox v-model="guestData.nama" placeholder="Nama"></textbox>
             <textbox
               v-model="guestData.asalDaerah"
@@ -66,13 +71,14 @@ export default {
         this.guestData.email = "";
         this.guestData.asalDaerah = "";
         this.guestData.pekerjaan = "";
-        this.$router.push("/about");
+        this.$router.push("/catalogue");
       } catch (e) {
         console.log("error");
       }
     },
     test() {
       console.log(this.guestData);
+      this.$router.push("/catalogue");
     },
   },
 };
