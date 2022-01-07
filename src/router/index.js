@@ -4,6 +4,7 @@ import Guestbook from "../views/Guestbook.vue";
 import Mainevent from "../views/Mainevent.vue";
 import Catalogue from "../views/Catalogue.vue";
 import Game from "../views/Game.vue";
+import Page404 from "../views/Page404.vue";
 
 const routes = [
   {
@@ -44,6 +45,14 @@ const routes = [
     component: Game,
     meta: {
       title: "IBCE 2022 - Game",
+    },
+  },
+  {
+    path: "/404",
+    name: "404",
+    component: Page404,
+    meta: {
+      title: "IBCE 2022 - 404 Page Not Found",
     },
   },
 
