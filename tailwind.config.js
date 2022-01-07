@@ -8,8 +8,6 @@ module.exports = {
       backgroundImage: {
         leafBackground: "url(assets/background.jpg)",
         comingSoon: "url(assets/comingsoon.svg)",
-        // navbarBG: "url(assets/navbar/background.png)",
-        // navbarBGphone: "url(assets/navbar/backgroundphone.png)",
         test: "url(assets/data-analytics.png)",
         bunga1: "url(assets/accordion/bunga1.png)",
         bunga2: "url(assets/accordion/bunga2.png)",

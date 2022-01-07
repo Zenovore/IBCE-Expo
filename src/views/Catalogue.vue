@@ -28,14 +28,8 @@
     />
     <div class="flex flex-col justify-center items-center py-24 gap-4 relative">
       <div class="flex flex-row gap-16">
-        <card
-          title="blu by Digital BCA"
-          src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
-        ></card>
-        <card
-          title="Paragon"
-          src="https://images.pexels.com/photos/2559931/pexels-photo-2559931.jpeg?cs=srgb&dl=pexels-kelly-l-2559931.jpg&fm=jpg"
-        ></card>
+        <card title="blu by Digital BCA" :src="images.blu"></card>
+        <card title="Paragon" :src="images.paragon"></card>
       </div>
       <div class=""></div>
       <accordion
@@ -433,6 +427,10 @@ export default {
             type: "png",
           },
         },
+      },
+      images: {
+        blu: require("../assets/sponsor/blu2.png"),
+        paragon: require("../assets/sponsor/paragon.png"),
       },
     };
   },
