@@ -6,16 +6,19 @@
     "serve": "vue-cli-service lint && vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn build && firebase deploy",
+    "publish-test" : "firebase hosting:channel:deploy testing-live"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "firebase": "^9.3.0",
     "firebase-tools": "^9.23.0",
+    "gsap": "^3.9.1",
     "pdfvuer": "^2.0.1",
     "vue": "^3.0.0",
     "vue-kinesis": "^2.0.5",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-winwheel": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
