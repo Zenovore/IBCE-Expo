@@ -85,7 +85,7 @@ export default {
       wheelSpinning: false,
       prizeName: "BUY 1 GET 1",
       WinWheelOptions: {
-        textFontSize: 18,
+        textFontSize: 14,
         outterRadius: 410,
         innerRadius: 25,
         lineWidth: 8,
@@ -152,6 +152,7 @@ export default {
     onFinishSpin(indicatedSegment) {
       this.prizeName = indicatedSegment.text;
       console.log(indicatedSegment.id);
+      this.$emit("spinDone", indicatedSegment.id);
       this.showPrize();
     },
   },
@@ -159,7 +160,7 @@ export default {
   updated() {},
   mounted() {
     this.initSpin();
-    // this.resetWheel()
+    this.resetWheel();
   },
   created() {},
 };
@@ -270,7 +271,7 @@ export default {
   left: calc(50% - 31px);
   right: 0;
   display: block;
-  z-index: 99999;
+  z-index: 90;
   background-image: url("./spinner-marker.svg");
   background-repeat: no-repeat;
   background-size: contain;
