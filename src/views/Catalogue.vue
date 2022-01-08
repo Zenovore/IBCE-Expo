@@ -429,7 +429,7 @@ export default {
         },
       },
       images: {
-        blu: require("../assets/sponsor/blu2.png"),
+        blu: require("../assets/sponsor/blu.png"),
         paragon: require("../assets/sponsor/paragon.png"),
       },
     };

@@ -252,7 +252,7 @@
             pr-4
             pl-3
             text-white text-left
-            md:border-0 md:pl-0 md:pt-8 md:pb-0
+            md:border-0 md:pl-0 md:pt-8 md:pb-4
           "
         >
           SPONSOR
@@ -267,7 +267,7 @@
           <li>
             <a href="#" class="block text-left">
               <img
-                src="../assets/sponsor/blu2.png"
+                src="../assets/sponsor/blu.png"
                 class="h-16 pl-3 md:h-20 md:pl-0"
                 alt=""
               />
