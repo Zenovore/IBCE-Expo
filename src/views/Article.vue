@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-whiteish min-h-screen w-full pt-20 py-10">
     <div class="flex flex-row rounded-lg bg-green_65 w-4/5 mx-auto">
-      <div class="w-2 h-auto rounded-l-lg bg-green_110"></div>
+      <div class="w-4 h-auto rounded-l-lg bg-green_80"></div>
       <h1
         class="
           font-lobster
