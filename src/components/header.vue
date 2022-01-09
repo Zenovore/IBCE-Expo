@@ -11,7 +11,7 @@
     "
   >
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex">
+      <a href="/catalogue" class="flex">
         <img src="../assets/c_icon_128.png" alt="" class="w-10" />
       </a>
       <button

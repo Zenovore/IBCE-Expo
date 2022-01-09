@@ -1,10 +1,9 @@
 <template>
-  <section class="vue-winwheel">
+  <section class="vue-winwheel font-lobster">
     <div class="mobile-container">
-      <h1>Vue-Winwheel</h1>
       <div class="wheel-wrapper">
         <div class="canvas-wrapper">
-          <canvas id="canvas" width="310" height="310">
+          <canvas id="canvas" width="360" height="360">
             <p
               style="
                  {
@@ -18,7 +17,7 @@
             </p>
           </canvas>
         </div>
-        <div class="button-wrapper">
+        <div class="button-wrapper font-roboto">
           <a
             class="btn btn-play"
             href="#"
@@ -85,7 +84,7 @@ export default {
       wheelSpinning: false,
       prizeName: "BUY 1 GET 1",
       WinWheelOptions: {
-        textFontSize: 14,
+        textFontSize: 22,
         outterRadius: 410,
         innerRadius: 25,
         lineWidth: 8,
@@ -176,7 +175,7 @@ export default {
 }
 .vue-winwheel h1 {
   color: #b32656;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
   font-size: 36px;
   line-height: 90px;
   letter-spacing: 4px;
@@ -194,21 +193,21 @@ export default {
   color: #b32656;
   margin-bottom: 16px;
   margin-top: 0;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
   font-size: 18px;
   letter-spacing: 1.1px;
   margin: 0;
 }
 .vue-winwheel #modalSpinwheel.custom-modal .content-wrapper .content p {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
   font-size: 14px;
   color: black;
   text-align: center;
   line-height: 25px;
 }
-.vue-winwheel #modalSpinwheel.custom-modal .content-wrapper .content p strong {
+/* .vue-winwheel #modalSpinwheel.custom-modal .content-wrapper .content p strong {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-}
+} */
 .vue-winwheel
   #modalSpinwheel.custom-modal
   .content-wrapper
@@ -236,7 +235,7 @@ export default {
   content: "";
   display: block;
   width: 45px;
-  background: #c4376f;
+  background: #265948;
   height: 45px;
   position: absolute;
   left: calc(50% - 26px);
@@ -249,9 +248,9 @@ export default {
 .vue-winwheel .canvas-wrapper:before {
   content: "";
   display: block;
-  width: 310px;
-  background: #0f0f0f;
-  height: 310px;
+  width: 360px;
+  background: #265948;
+  height: 360px;
   position: absolute;
   left: 0;
   right: 0;
@@ -295,7 +294,7 @@ export default {
   font-weight: bold;
   text-decoration: none;
   border-radius: 2px;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
   letter-spacing: 2px;
 }
 </style>

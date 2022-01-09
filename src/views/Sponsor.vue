@@ -15,7 +15,25 @@
       <h1 class="text-4xl font-lobster mt-6 mb-6">
         {{ selectedSponsor.nama }}
       </h1>
+      <iframe
+        v-if="name == 'paragon'"
+        class="
+          mx-auto
+          my-8
+          md:my-16
+          w-4/5
+          h-[16rem]
+          md:w-[36rem] md:h-[24rem]
+          lg:w-[72rem] lg:h-[32rem]
+        "
+        src="https://www.youtube.com/embed/Z3V02qp0oPA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
       <pre
+        v-if="name == 'blu'"
         class="
           text-lg
           lg:text-xl
@@ -46,6 +64,9 @@ export default {
           nama: "blu by BCA Digital",
           content:
             "Hi! Ini blu, aplikasi mobile banking dari BCA Digital, salah satu perusahaan anak dari BCA Group. blu senang bisa berkenalan dengan kamu!\n blu hadir dengan tujuan memudahkan kamu dengan segala fiturnya. Yuk, cobain beragam fitur dari blu! \n Ngatur banyak tabungan dalam satu rekening? Bisa pake bluSaving. Patungan online buat liburan ramean? Pake bluGether pasti bisa jalan. \n Pengen buka Deposito tapi cuma punya 1juta? bluDeposit aja. Transaksi ini itu, semua bisa dalam genggaman kamu! \n\n Pengen kenal lebih dekat sama blu? Cuss, download aplikasi blu by BCA Digital di Play Store atau App Store sekarang juga! #MulaiLangkahmu bareng blu! #YangPentingLakuin",
+        },
+        paragon: {
+          nama: "Paragon",
         },
       },
       selectedSponsor: "",

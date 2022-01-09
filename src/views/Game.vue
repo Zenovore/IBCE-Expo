@@ -1,12 +1,12 @@
 <template>
   <div class="relative bg-whiteish min-h-screen w-full">
     <img
-      class="absolute bottom-0 left-0 w-4/5 md:w-1/2 lg:w-2/5"
+      class="absolute bottom-0 left-0 w-4/5 md:w-1/2 lg:w-1/3"
       src="../assets/bgflower/bg3_bottomleft.png"
       alt=""
     />
     <img
-      class="absolute bottom-0 right-0 hidden md:block md:w-1/2 lg:w-2/5"
+      class="absolute bottom-0 right-0 hidden md:block md:w-1/2 lg:w-1/3"
       src="../assets/bgflower/bg3_bottomright.png"
       alt=""
     />
@@ -24,22 +24,23 @@
         :segments="options"
       ></VueWinWheel> -->
       <VueWinWheel
-        class="mx-auto w-[fit-content]"
+        class="mx-auto pt-36 w-[fit-content]"
         @spinDone="(id) => showPrize(id)"
         :segments="options"
       />
       <div
-        v-if="prize.name != ''"
         id="explanation"
-        class="flex flex-col pt-5 h-[50vh] py-[5vh]"
+        :class="`flex flex-col pt-5 ${prize.pict != '' ? 'py-[50vh]' : 'py-0'}`"
       >
-        <img
-          class="w-96 rounded-md mx-auto h-auto"
-          :src="require('../assets/games/' + prize.pict)"
-          alt=""
-        />
+        <div v-if="prize.pict != ''" class="w-96 h-48 rounded-md mx-auto">
+          <img
+            class="object-scale-down h-[inherit] w-[inherit] rounded-md"
+            :src="require('../assets/games/' + prize.pict)"
+            alt=""
+          />
+        </div>
         <h1 class="text-4xl font-lobster my-2">{{ prize.name }}</h1>
-        <p class="font-roboto">
+        <p class="text-xl lg:text-2xl font-roboto px-8 md:px-32 lg:px-64">
           {{ prize.desc }}
         </p>
       </div>
@@ -57,62 +58,62 @@ export default {
     return {
       options: [
         {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
+          textFillStyle: "#193B30",
+          fillStyle: "#FCFAEB",
           text: "Bioengineering",
           id: 0,
         },
         {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
+          textFillStyle: "#fff",
+          fillStyle: "#32887B",
           text: "IBCE",
           id: 1,
         },
         {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
+          textFillStyle: "#193B30",
+          fillStyle: "#FCFAEB",
           text: "HMRH",
           id: 2,
         },
         {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
+          textFillStyle: "#fff",
+          fillStyle: "#32887B",
           text: "Functional Food",
           id: 3,
         },
         {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
+          textFillStyle: "#193B30",
+          fillStyle: "#FCFAEB",
           text: "Fiber ",
           id: 4,
         },
         {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
+          textFillStyle: "#fff",
+          fillStyle: "#32887B",
           text: "Fine Chemical",
           id: 5,
         },
         {
-          textFillStyle: "#fff",
-          fillStyle: "#000",
+          textFillStyle: "#193B30",
+          fillStyle: "#FCFAEB",
           text: "Food",
           id: 6,
         },
         {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
+          textFillStyle: "#fff",
+          fillStyle: "#32887B",
           text: "Fuel",
           id: 7,
         },
         {
-          textFillStyle: "#fff",
-          fillStyle: "#fadede",
+          textFillStyle: "#193B30",
+          fillStyle: "#FCFAEB",
           text: "Fertilizer",
           id: 8,
         },
         {
-          textFillStyle: "#000",
-          fillStyle: "#fadede",
+          textFillStyle: "#fff",
+          fillStyle: "#32887B",
           text: "Feed  ",
           id: 9,
         },
@@ -125,7 +126,7 @@ export default {
       },
       prizeList: {
         0: {
-          name: "BIOENGINEERING ",
+          name: "BioEngineering ",
           pict: "IBCE.png",
           desc: "Rekayasa Hayati (Bioengineering) adalah interdisiplin ilmu kehayatan dan teknik yang diaplikasikan dalam perekayasaan berbasis biosistem untuk meningkatkan efisiensi fungsi dan manfaat untuk bioindustri. Rekayasa Hayati mempelajari perancangan suatu sistem produksi berbasis hayati dan scale up rancangan hingga skala industri.",
         },

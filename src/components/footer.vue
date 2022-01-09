@@ -11,7 +11,7 @@
     "
   >
     <div class="container flex flex-wrap items-center mx-auto">
-      <a href="#" class="flex">
+      <a href="/catalogue" class="flex">
         <img
           src="../assets/logo.png"
           class="pl-3 pr-4 h-20 md:pl-0 md:h-24"
@@ -33,7 +33,7 @@
         >
           <li>
             <a
-              href="#"
+              href="/catalogue"
               class="
                 block
                 py-2
@@ -65,7 +65,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/game"
               class="
                 block
                 py-2
@@ -96,7 +96,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="/mainevent"
               class="
                 block
                 py-2
@@ -265,7 +265,7 @@
         >
           <!-- <li class="hidden md:block"></li> -->
           <li>
-            <a href="#" class="block text-left">
+            <a href="/sponsor/blu" class="block text-left">
               <img
                 src="../assets/sponsor/blu.png"
                 class="h-16 pl-3 md:h-20 md:pl-0"
@@ -274,7 +274,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="block text-left">
+            <a href="/sponsor/paragon" class="block text-left">
               <img
                 src="../assets/sponsor/paragon.png"
                 class="h-16 pl-3 md:h-20 md:pl-0"

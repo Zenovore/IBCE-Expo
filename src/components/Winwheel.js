@@ -15,7 +15,7 @@ export class Winwheel {
       numSegments: 1, // The number of segments. Need at least one to draw.
       drawMode: "code", // The draw mode. Possible values are 'code', 'image', 'segmentImage'. Default is code which means segments are drawn using canvas arc() function.
       rotationAngle: 0, // The angle of rotation of the wheel - 0 is 12 o'clock position.
-      textFontFamily: "sans-serif", // Segment text font, you should use web safe fonts.
+      textFontFamily: "Lobster", // Segment text font, you should use web safe fonts.
       textFontSize: 13, // Size of the segment text.
       textFontWeight: "bold", // Font weight.
       textOrientation: "horizontal", // Either horizontal, vertical, or curved.
