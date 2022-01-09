@@ -36,7 +36,7 @@ const routes = [
     name: "mainevent",
     component: Mainevent,
     meta: {
-      title: "IBCE 2022 - Main Event",
+      title: "IBCE 2022 – Main Event",
     },
   },
   {
@@ -44,7 +44,7 @@ const routes = [
     name: "game",
     component: Game,
     meta: {
-      title: "IBCE 2022 - Game",
+      title: "IBCE 2022 – Game",
     },
   },
   {
@@ -52,7 +52,7 @@ const routes = [
     name: "404",
     component: Page404,
     meta: {
-      title: "IBCE 2022 - 404 Page Not Found",
+      title: "IBCE 2022 – 404 Page Not Found",
     },
   },
 

@@ -255,7 +255,7 @@
             md:border-0 md:pl-0 md:pt-8 md:pb-4
           "
         >
-          SPONSOR
+          SPONSORS
         </p>
         <ul
           class="
@@ -283,6 +283,65 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="container flex flex-wrap items-center mx-auto">
+        <div class="w-full lg:block lg:w-auto">
+          <p
+            class="
+              block
+              py-2
+              pr-4
+              pl-3
+              text-white text-left
+              md:border-0 md:pl-0 md:pt-8 md:pb-4
+            "
+          >
+            MEDIA PARTNER
+          </p>
+          <ul
+            class="
+              flex flex-row flex-wrap
+              md:space-x-8 md:mt-0 md:text-lg md:font-medium md:items-start
+            "
+          >
+            <!-- <li class="hidden md:block"></li> -->
+            <li>
+              <img
+                src="../assets/medpar/giat_baca.png"
+                class="h-12 pl-3 md:h-16 md:pl-0"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/medpar/km_palembang.png"
+                class="h-12 pl-3 md:h-16 md:pl-0"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/medpar/prayevent.png"
+                class="h-12 pl-3 md:h-16 md:pl-0"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/medpar/prfm.png"
+                class="h-12 pl-3 md:h-16 md:pl-0"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../assets/medpar/seputar_event.png"
+                class="h-12 pl-3 md:h-16 md:pl-0"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
