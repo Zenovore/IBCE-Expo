@@ -29,7 +29,7 @@
     <div class="flex flex-col justify-center items-center py-24 gap-4 relative">
       <div class="flex flex-col md:flex-row gap-16">
         <a href="/sponsor/blu">
-          <card title="blu by Digital BCA" :src="images.blu"></card>
+          <card title="blu by BCA Digital" :src="images.blu"></card>
         </a>
         <a href="/sponsor/paragon">
           <card title="Paragon" :src="images.paragon"></card>
