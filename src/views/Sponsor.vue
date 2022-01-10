@@ -6,12 +6,14 @@
       alt=""
     />
     <div class="flex flex-col justify-center py-20 relative">
-      <img
-        v-if="name == 'blu'"
-        class="w-72 sm:w-96 self-center"
-        src="../assets/sponsor/blu2.png"
-        alt="test"
-      />
+      <a class="self-center" href="https://blubybcadigital.id/" target="_blank">
+        <img
+          v-if="name == 'blu'"
+          class="w-72 sm:w-96 self-center"
+          src="../assets/sponsor/blu2.png"
+          alt="test"
+        />
+      </a>
       <h1 class="text-4xl font-lobster mt-6 mb-6">
         {{ selectedSponsor.nama }}
       </h1>
