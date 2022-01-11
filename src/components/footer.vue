@@ -282,6 +282,13 @@
               />
             </a>
           </li>
+          <li>
+            <img
+              src="../assets/sponsor/inaco.png"
+              class="h-16 pl-3 md:h-20 md:pl-0"
+              alt=""
+            />
+          </li>
         </ul>
       </div>
       <div class="container flex flex-wrap items-center mx-auto">
