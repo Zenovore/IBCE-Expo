@@ -395,6 +395,9 @@ export default {
     };
   },
   created() {
+    if (!this.$cookies.isKey("valid")) {
+      this.$router.push("/");
+    }
     if (!this.catalogueData[this.year]) {
       this.$router.push("/404");
     }

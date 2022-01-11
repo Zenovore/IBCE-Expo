@@ -67,5 +67,13 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  created() {
+    if (!this.$cookies.isKey("valid")) {
+      this.$router.push("/");
+    }
+  },
+};
+</script>
 <style></style>

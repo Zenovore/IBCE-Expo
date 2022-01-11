@@ -11898,6 +11898,13 @@ vue-winwheel@^1.0.0:
   dependencies:
     gsap "^2.0.2"
 
+vue3-cookies@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/vue3-cookies/-/vue3-cookies-1.0.6.tgz#c1da41f1f3d6bbea8e75157d49d09dfc2a18ca8a"
+  integrity sha512-a1UvVD0qIgxyOqjlSOwnLnqAnz8ASltugEv8yX+96i/WGZAN9fEDci7xO4HIWZE1uToUnRq9JnFhvfDCSo45OA==
+  dependencies:
+    vue "^3.0.0"
+
 vue@^3.0.0:
   version "3.2.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.21.tgz#55f5665172d95cf97e806b9aad0a375180be23a1"

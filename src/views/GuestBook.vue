@@ -78,6 +78,7 @@ export default {
     },
     test() {
       console.log(this.guestData);
+      this.$cookies.set("valid", "true", "1h");
       this.$router.push("/catalogue");
     },
   },

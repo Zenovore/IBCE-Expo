@@ -75,6 +75,9 @@ export default {
     };
   },
   created() {
+    if (!this.$cookies.isKey("valid")) {
+      this.$router.push("/");
+    }
     if (!this.sponsorData[this.name]) {
       this.$router.push("/404");
     }
