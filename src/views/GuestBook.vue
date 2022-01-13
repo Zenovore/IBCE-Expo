@@ -39,6 +39,7 @@
               Submit
             </button> -->
             <mainButton @click="test"></mainButton>
+            <p class="font-roboto text-red_100 mt-2">{{ this.errorMessage }}</p>
           </div>
         </div>
       </div>
@@ -61,6 +62,7 @@ export default {
         pekerjaan: "",
         email: "",
       },
+      errorMessage: "",
     };
   },
   methods: {
@@ -78,7 +80,34 @@ export default {
     },
     test() {
       console.log(this.guestData);
-      this.$router.push("/catalogue");
+      if (this.validateInput() && this.validateEmail()) {
+        this.$router.push("/catalogue");
+      }
+    },
+    validateEmail() {
+      if (
+        !String(this.guestData.email)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          )
+      ) {
+        this.errorMessage = "Invalid email!";
+        return false;
+      }
+      return true;
+    },
+    validateInput() {
+      if (
+        this.guestData.name == "" ||
+        this.guestData.email == "" ||
+        this.guestData.asalDaerah == "" ||
+        this.guestData.pekerjaan == ""
+      ) {
+        this.errorMessage = "Fill the required information!";
+        return false;
+      }
+      return true;
     },
   },
 };
