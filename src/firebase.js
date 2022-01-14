@@ -1,4 +1,5 @@
 import firebase from "firebase/compat/app";
+import { getAnalytics } from "firebase/analytics";
 // import { firebaseConfig } from "./firebase-config";
 import "firebase/compat/firestore";
 
@@ -13,6 +14,8 @@ const firebaseConfig = {
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+// eslint-disable-next-line no-unused-vars
+const analytics = getAnalytics(firebaseApp);
 
 export const db = firebaseApp.firestore();
 const guestbookCollection = db.collection("guest-book");

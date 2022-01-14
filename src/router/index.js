@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Comingsoon from "../views/Comingsoon.vue";
-import Guestbook from "../views/Guestbook.vue";
+import Guestbook from "../views/GuestBook.vue";
 import Mainevent from "../views/Mainevent.vue";
 import Catalogue from "../views/Catalogue.vue";
 import Game from "../views/Game.vue";
