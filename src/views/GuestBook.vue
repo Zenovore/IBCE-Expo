@@ -75,6 +75,7 @@ export default {
           this.guestData.email = "";
           this.guestData.asalDaerah = "";
           this.guestData.pekerjaan = "";
+          this.$cookies.set("valid", "true", "1h");
           this.$router.push("/catalogue");
         }
         // this.$router.push("/catalogue");

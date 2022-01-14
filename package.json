@@ -6,7 +6,7 @@
     "serve": "vue-cli-service lint && vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "yarn build && firebase deploy",
+    "deploy": "firebase deploy",
     "publish-test": "firebase hosting:channel:deploy testing-live"
   },
   "dependencies": {
