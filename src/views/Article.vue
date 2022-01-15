@@ -338,8 +338,8 @@ export default {
             id: 0,
             judul:
               "Pra-Rancangan Sistem Kultivasi Duckweed Spirodela polyrhiza dengan Elisitor Kitosan Untuk Meningkatkan Produktivitas dan Perolehan Flavonoid Sebagai Senyawa Antioksidan yang..",
-            link: "https://firebasestorage.googleapis.com/v0/b/ibce-database.appspot.com/o/2021-2022%2FPRA-RA~2.PDF?alt=media&token=30ffdba1-1cee-4b44-8e79-79db3db6dce1",
-            type: "pdf",
+            link: "https://firebasestorage.googleapis.com/v0/b/ibce-database.appspot.com/o/2021-2022%2FPra-Rancangan%20Sistem%20Kultivasi%20Duckweed%20Spirodela%20polyrhiza%20dengan%20Elisitor%20Kitosan%20Untuk%20Meningkatkan%20Produktivitas%20dan%20Perolehan%20Flavonoid%20Sebagai%20Senyawa%20Antioksidan%20yang.png?alt=media&token=e709ee7e-1306-4cde-b715-7750dcc0df29",
+            type: "png",
           },
           1: {
             id: 1,
@@ -359,8 +359,8 @@ export default {
             id: 3,
             judul:
               "Pra-Rancangan Sistem Produksi Minyak Atsiri Perolehan Tinggi dari Tanaman Cengkeh (Syzygium aromaticum) dengan Perlakuan Awal Fermentasi Substrat Padat Oleh Jamur Trichoderma harzianum Serta..",
-            link: "https://firebasestorage.googleapis.com/v0/b/ibce-database.appspot.com/o/2021-2022%2FPRA-RA~1.PDF?alt=media&token=00c212f1-8440-4d22-8e5e-87d7f2c49c3e",
-            type: "pdf",
+            link: "https://firebasestorage.googleapis.com/v0/b/ibce-database.appspot.com/o/2021-2022%2FPRA-RA~6.png?alt=media&token=99691db1-f8f7-4bc9-a9cc-3b4474b5d307",
+            type: "png",
           },
           4: {
             id: 4,
