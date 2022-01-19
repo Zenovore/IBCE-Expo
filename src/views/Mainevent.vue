@@ -14,26 +14,29 @@
       src="../assets/bgflower/bg3_bottomright.png"
       alt=""
     />
-    <h1 class="text-4xl font-lobster">
-      See you at the main event and the next IBCE
-    </h1>
-    <!-- <h1 class="mt-2"> -->
-    <a
-      class="font-roboto text-5xl mt-2 hover:underline"
-      href="https://bit.ly/KesanPesanExpoIBCE2022"
-      >bit.ly/KesanPesanExpoIBCE2022</a
-    >
+    <div class="relative">
+      <h1 class="text-xl md:text-4xl font-lobster">
+        See you at the main event and the next IBCE
+      </h1>
+      <!-- <h1 class="mt-2"> -->
+      <a
+        class="font-roboto text-2xl lg:text-5xl mt-2 hover:underline"
+        href="https://bit.ly/KesanPesanExpoIBCE2022"
+        >bit.ly/KesanPesanExpoIBCE2022</a
+      >
+    </div>
     <!-- </h1> -->
   </div>
 </template>
 
 <script>
 export default {
-  // created() {
-  //   if (!this.$cookies.isKey("valid")) {
-  //     this.$router.push("/");
-  //   }
-  // },
+  created() {
+    // if (!this.$cookies.isKey("valid")) {
+    // this.$router.push("/");
+    // }
+    console.log("sinta cantik");
+  },
 };
 </script>
 
