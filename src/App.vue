@@ -4,17 +4,17 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <!-- <div class="flex bg-black text-white text-[10rem]">apel</div> -->
-  <Navbar class="fixed w-screen z-[100]" />
+  <!-- <Navbar class="fixed w-screen z-[100]" /> -->
   <router-view />
-  <Footer />
+  <!-- <Footer /> -->
 </template>
 
 <script>
-import Navbar from "./components/header.vue";
-import Footer from "./components/footer.vue";
+// import Navbar from "./components/header.vue";
+// import Footer from "./components/footer.vue";
 export default {
   name: "app",
-  components: { Navbar, Footer },
+  components: {},
   created() {
     // console.log(this.$route);
     // console.log(this.$route.path);
