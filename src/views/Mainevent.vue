@@ -10,10 +10,16 @@
     "
   >
     <img
-      class="absolute bottom-0 right-0 md:w-1/2 lg:w-1/3"
+      class="absolute bottom-0 right-0 md:w-1/2 lg:w-1/3 pointer-events-none"
       src="../assets/bgflower/bg3_bottomright.png"
       alt=""
     />
+    <img
+      class="absolute bottom-0 left-0 md:w-1/2 lg:w-1/3 pointer-events-none"
+      src="../assets/bgflower/bg2_bottomleft.png"
+      alt=""
+    />
+
     <h1 class="text-4xl font-lobster">
       See you at the main event and the next IBCE
     </h1>

@@ -60,6 +60,7 @@
             sm:h-64
             md:h-72
             xl:h-80
+            pointer-events-none
           "
         />
       </div>
