@@ -9,6 +9,11 @@
       items-center
     "
   >
+    <img
+      class="absolute bottom-0 right-0 md:w-1/2 lg:w-1/3"
+      src="../assets/bgflower/bg3_bottomright.png"
+      alt=""
+    />
     <h1 class="text-4xl font-lobster">
       See you at the main event and the next IBCE
     </h1>
