@@ -1,7 +1,15 @@
 <template>
   <div class="relative bg-whiteish min-h-screen w-full mx-auto 2xl:px-[10vw]">
     <img
-      class="absolute bottom-0 right-0 w-2/5 md:w-1/3 lg:w-1/3"
+      class="
+        absolute
+        bottom-0
+        right-0
+        w-2/5
+        md:w-1/3
+        lg:w-1/3
+        pointer-events-none
+      "
       src="../assets/bgflower/bg1_bottomright.png"
       alt=""
     />
