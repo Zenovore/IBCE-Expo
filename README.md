@@ -5,4 +5,5 @@ Integrated Bioengineering Competition and Event is an event held to introduce th
 ## Tech Stack
 
 Frontend - Vue.js, Tailwind CSS
+
 Backend - Using Firebase Database (For guest book)
